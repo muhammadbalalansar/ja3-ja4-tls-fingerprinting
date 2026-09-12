@@ -10,6 +10,8 @@
    ╚═╝   ╚══════╝╚══════╝╚═╝     ╚═╝
 ```
 
+**
+
 [![Cybersecurity Projects](https://img.shields.io/badge/Cybersecurity--Projects-Project%20%2334-red?style=flat&logo=github)](https://github.com/CarterPerez-dev/Cybersecurity-Projects/tree/main/PROJECTS/intermediate/ja3-ja4-tls-fingerprinting)
 [![Rust](https://img.shields.io/badge/Rust-edition%202024-CE412B?style=flat&logo=rust&logoColor=white)](https://www.rust-lang.org)
 [![JA4+](https://img.shields.io/badge/JA4%2B-JA3%20%C2%B7%20JA4%20%C2%B7%20JA4H%20%C2%B7%20JA4X%20%C2%B7%20JA4T-4B7BEC?style=flat)](https://github.com/FoxIO-LLC/ja4)
