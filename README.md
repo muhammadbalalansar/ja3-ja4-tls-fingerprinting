@@ -10,7 +10,7 @@
    ╚═╝   ╚══════╝╚══════╝╚═╝     ╚═╝
 ```
 
-**Muhammad Balal
+**Muhammad Balal Ansar
 
 [![Cybersecurity Projects](https://img.shields.io/badge/Cybersecurity--Projects-Project%20%2334-red?style=flat&logo=github)](https://github.com/CarterPerez-dev/Cybersecurity-Projects/tree/main/PROJECTS/intermediate/ja3-ja4-tls-fingerprinting)
 [![Rust](https://img.shields.io/badge/Rust-edition%202024-CE412B?style=flat&logo=rust&logoColor=white)](https://www.rust-lang.org)
