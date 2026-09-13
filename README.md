@@ -112,7 +112,7 @@ This project ships a full teaching track. Read it in order, or jump to what you 
 
 ## Architecture
 
-Three crates, in a strict dependency line. The engine knows nothing about databases or networks; the intelligence store knows nothing about capture; the binary wires them together.
+Three crates, in a strict dependency line. The engine knows nothing about databases or networks; the intelligence store knows nothing about capture; the  binary wires them together.
 
 ```
    pcap / pcapng file        live interface (libpcap)       QUIC initial
