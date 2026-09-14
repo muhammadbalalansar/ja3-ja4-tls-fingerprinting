@@ -55,7 +55,7 @@ This is not a stub. The tool fingerprints real captures, decrypts real QUIC, mat
 **Intelligence**
 - A bundled SQLite database seeded from three vendored feeds with no network call: abuse.ch SSLBL, the Salesforce `osx-nix` JA3 list, and a small curated C2 set (**271 fingerprints**)
 - An optional install-time pull of ja4db.com, validated record by record on the way in
-- Exact lookups plus JA4 fuzzy matching on the capability-and-cipher prefix, scored into a verdict with a threat score and a confidence
+- Exact lookups plus JA4 fuzzy matching on the capability-and-cipher prefix, scored into a verdict with a threat score and a confidence 
 
 **Detection**
 - Six rules that run as a capture streams: `known_bad` (a feed hit), `ua_mismatch` (the headline: a JA4 that disagrees with its own User-Agent), `os_mismatch` (a JA4T that disagrees with the OS the User-Agent claims), `first_seen`, `fp_rotation`, and `monoculture`
