@@ -154,7 +154,7 @@ Every fingerprint is pinned to a published vector. The JA3 tests reproduce the o
 
 The benchmarks replay vendored captures frame by frame through the whole pipeline. On a modern laptop the pipeline sustains roughly **380,000 to 500,000 fingerprints per second**, comfortably past the project target of 10,000.
 
-## Run in Docker
+## Run in Docker :
 
 No Rust toolchain on the host? The dashboard runs entirely in containers.
 
