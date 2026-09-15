@@ -31,7 +31,7 @@ A fingerprint is a hash of those choices. The same software produces the same fi
 
 This project builds the whole sensor around that idea, in a language where a parser bug is a memory-safety bug. The fingerprinting core forbids `unsafe`, the capture path is bounded so an adversarial packet cannot exhaust memory, and every fingerprint is checked byte for byte against the reference implementations.
 
-## What Works Today
+## What Works Today :
 
 This is not a stub. The tool fingerprints real captures, decrypts real QUIC, matches against real public threat feeds, and raises real alerts, and every capability below is exercised by a known-answer test against a published vector, an integration test against a vendored capture, and a run of the actual `tlsfp` binary.
 
