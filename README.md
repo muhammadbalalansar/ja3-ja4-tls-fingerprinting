@@ -14,7 +14,9 @@
 
 [![Cybersecurity Projects](https://img.shields.io/badge/Cybersecurity--Projects-Project%20%2334-red?style=flat&logo=github)](https://github.com/CarterPerez-dev/Cybersecurity-Projects/tree/main/PROJECTS/intermediate/ja3-ja4-tls-fingerprinting)
 [![Rust](https://img.shields.io/badge/Rust-edition%202024-CE412B?style=flat&logo=rust&logoColor=white)](https://www.rust-lang.org)
-[![JA4+](https://img.shields.io/badge/JA4%2B-JA3%20%C2%B7%20JA4%20%C2%B7%20JA4H%20%C2%B7%20JA4X%20%C2%B7%20JA4T-4B7BEC?style=flat)](https://github.com/FoxIO-LLC/ja4)
+[![JA4+]
+
+
 > A passive TLS fingerprinting sensor in Rust. Point it at a capture file or a live interface and it computes the JA3, JA4, JA4S, JA4H, JA4X, and JA4T fingerprints of every handshake, matches them against a local intelligence database, and flags the things a fingerprint alone cannot hide: a TLS stack that disagrees with its own User-Agent, a brand-new fingerprint, a client that rotates its identity to evade a blocklist. It reads TCP and the  TLS hidden inside QUIC initial packets, never sends a byte, and carries half a million fingerprints a second.  
 
 ## Why fingerprint TLS
