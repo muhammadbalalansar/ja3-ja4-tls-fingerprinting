@@ -198,6 +198,6 @@ ja3-ja4-tls-fingerprinting/
 └── justfile                      # every recipe
 ```
 
-## License
+## License:
 
 [AGPL 3.0](LICENSE). The vendored threat feeds under `crates/tlsfp-intel/seeds/` keep their original licenses, recorded per feed in [`NOTICE.md`](NOTICE.md) and  in the `intel_source` table.
