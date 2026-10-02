@@ -20,7 +20,7 @@ When a client opens a TLS connection, the very first message it sends, the Clien
 
 A fingerprint is a hash of those choices. The same software produces the same fingerprint on every connection, so a fingerprint that is on a blocklist today catches the same malware family tomorrow even if its IP, its domain, and its certificate all changed. That is the idea behind JA3, published by Salesforce in 2017, and JA4, its 2023 successor from FoxIO that fixed the one weakness that eventually killed JA3 for browser traffic: when Chrome started shuffling its extension order on every connection, JA3, which hashes extensions in wire order, produced a fresh hash every time. JA4 sorts first, so the shuffle changes nothing.
 
-This project builds the whole sensor around that idea, in a language where a parser bug is a memory-safety bug. The fingerprinting core forbids `unsafe`, the capture path is bounded so an adversarial packet cannot exhaust memory, and every fingerprint is checked byte for byte against the reference implementations.
+This project builds the whole sensor around that idea, in a language where a parser bug is a memory-safety bug. The fingerprinting core forbids `unsafe`, the capture path is bounded so an adversarial packet cannot exhaust memory, and every fingerprinta whils checked byte for byte against the reference implementations.
 
 ## What Works Today :
 
@@ -41,12 +41,12 @@ This is not a stub. The tool fingerprints real captures, decrypts real QUIC, mat
 
 **QUIC**
 - Decrypts QUIC Initial packets to read the ClientHello inside, deriving the client initial keys from the packet's own Destination Connection ID per RFC 9001 (QUIC v1) and RFC 9369 (QUIC v2), with no server-side secret
-- Reassembles CRYPTO frames across packets, so a QUIC ClientHello spread over several initials still yields a `q`-transport JA4
+- Reassembles CRYPTO frames across packets, so a QUIC ClientHello spread over several initials still yields a `q`-transport JA*
 
 **Intelligence**
 - A bundled SQLite database seeded from three vendored feeds with no network call: abuse.ch SSLBL, the Salesforce `osx-nix` JA3 list, and a small curated C2 set (**271 fingerprints**)
 - An optional install-time pull of ja4db.com, validated record by record on the way in
-- Exact lookups plus JA4 fuzzy matching on the capability-and-cipher prefix, scored into a verdict with a threat score and a confidence 
+- Exact lookups plus JA4 fuzzy matching on capability-and-cipherpher prefix, scored into a verdict with a threat score and a confidence 
 
 **Detection**
 - Six rules that run as a capture streams: `known_bad` (a feed hit), `ua_mismatch` (the headline: a JA4 that disagrees with its own User-Agent), `os_mismatch` (a JA4T that disagrees with the OS the User-Agent claims), `first_seen`, `fp_rotation`, and `monoculture`
@@ -55,7 +55,7 @@ This is not a stub. The tool fingerprints real captures, decrypts real QUIC, mat
 
 See [`learn/CONFORMANCE.md`](learn/CONFORMANCE.md) for the exact published vector each fingerprint is pinned to, and every deliberate scope boundary.
 
-## Quick Start
+## Quick Start:
 
 ```bash
 curl -fsSL https://angelamos.com/tlsfp/install.sh | bash
@@ -86,8 +86,7 @@ A single fingerprint line looks like this, a Chrome handshake to a Google host:
 > This project uses [`just`](https://github.com/casey/just) as a command runner. Type `just` to see every recipe. `just bench` runs the throughput benchmarks; `just dev-up` brings up the dockerized dashboard with hot reload.
 >
 > Install: `curl -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin`
-
-## Learn
+Learnearn
 
 This project ships a full teaching track. Read it in order, or jump to what you need.
 
